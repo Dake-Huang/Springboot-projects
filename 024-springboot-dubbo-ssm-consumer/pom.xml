@@ -39,8 +39,8 @@
             <artifactId>tomcat-embed-jasper</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.bjpwernode.springboot</groupId>
-            <artifactId>023-springboot-dubbo-ssm-provider</artifactId>
+            <groupId>com.bjpowernode.springboot</groupId>
+            <artifactId>022-springboot-dubbo-ssm-interface</artifactId>
             <version>1.0.0</version>
         </dependency>
     </dependencies>

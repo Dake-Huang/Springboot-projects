@@ -1,17 +1,12 @@
 package com.bjpowernode.springboot.mapper;
 
 import com.bjpowernode.springboot.bean.Student;
-
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
+@Mapper
 public interface StudentMapper {
-    int deleteByPrimaryKey(Integer studentId);
 
-    int insert(Student record);
-
-    int insertSelective(Student record);
-
+    @Select("select id,name.age from student where id =#{id}")
     Student selectByPrimaryKey(Integer studentId);
 
-    int updateByPrimaryKeySelective(Student record);
-
-    int updateByPrimaryKey(Student record);
 }
