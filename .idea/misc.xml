@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/019-springboot-dubbo-interface" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/001-springboot-first/pom.xml" />
+        <option value="$PROJECT_DIR$/002-springboot-springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/003-springboot-context-path/pom.xml" />
+        <option value="$PROJECT_DIR$/004-springboot-application-yml/pom.xml" />
+        <option value="$PROJECT_DIR$/005-springboot-allboth-properties-yml/pom.xml" />
+        <option value="$PROJECT_DIR$/006-springbooot-multi-environment-properties/pom.xml" />
+        <option value="$PROJECT_DIR$/007-springbooot-multi-environment-yml/pom.xml" />
+        <option value="$PROJECT_DIR$/008-springbooot-custom-configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/009-springboot-custom-configuration-2/pom.xml" />
+        <option value="$PROJECT_DIR$/010-spriingboot-jsp/pom.xml" />
+        <option value="$PROJECT_DIR$/011-springboot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/012-springboot-mybatis-1/pom.xml" />
+        <option value="$PROJECT_DIR$/013-springboot-mybatis-2/pom.xml" />
+        <option value="$PROJECT_DIR$/014-springboot-mybatis-3/pom.xml" />
+        <option value="$PROJECT_DIR$/015-springboot-transaction/pom.xml" />
+        <option value="$PROJECT_DIR$/016-springboot-springmvc-annotion/pom.xml" />
+        <option value="$PROJECT_DIR$/017-springboot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/018-springboot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/019-springboot-dubbo-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/021-springboot-dubbo-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/020-springboot-dubbo-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/022-springboot-dubbo-ssm-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/024-springboot-dubbo-ssm-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/024-springboot-dubbo-ssm-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/023-springboot-dubbo-ssm-provider/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

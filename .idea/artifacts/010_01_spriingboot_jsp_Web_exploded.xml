@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="010-01-spriingboot-jsp:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/010_01_spriingboot_jsp_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="010-01-spriingboot-jsp/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="010-01-spriingboot-jsp" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

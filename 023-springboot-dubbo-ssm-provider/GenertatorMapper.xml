@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <!-- 配置mysql 驱动jar包路径.用了绝对路径 -->
+    <classPathEntry location="D:\mysql-connector-java-5.1.46-bin.jar" />
+
+    <context id="context_mybatis" targetRuntime="MyBatis3">
+
+        <!-- 为了防止生成的代码中有很多注释，比较难看，加入下面的配置控制 -->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true" />
+            <property name="suppressDate" value="true" />
+        </commentGenerator>
+        <!-- 注释控制完毕 -->
+
+        <!-- 数据库连接 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://192.168.195.133:3306/bjpowernode?characterEncoding=utf8"
+                        userId="root"
+                        password="123456">
+        </jdbcConnection>
+
+        <!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer   true，把JDBC DECIMAL 和NUMERIC 类型解析为java.math.BigDecimal-->
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!-- 数据表对应的model 层  -->
+        <javaModelGenerator targetPackage="com.bjpowernode.springboot.bean" targetProject="E:/UP/Springboot/022-springboot-dubbo-ssm-interface/src/main/java">
+            <property name="enableSubPackages" value="false" /><!-- 是否在包名后加上scheme名称 -->
+            <property name="trimStrings" value="true" /><!-- 从数据库返回的值被清理前后的空格 -->
+        </javaModelGenerator>
+
+        <!-- sql mapper 隐射配置文件 -->
+        <sqlMapGenerator targetPackage="com.bjpowernode.springboot.mapper"  targetProject="src/main/java">
+            <property name="enableSubPackages" value="false" />
+        </sqlMapGenerator>
+
+        <!-- 在ibatis2 中是dao层，但在mybatis3中，其实就是mapper接口 -->
+             <javaClientGenerator type="XMLMAPPER" targetPackage="com.bjpowernode.springboot.mapper"  targetProject="src/main/java">
+              <property name="enableSubPackages" value="true" />
+            </javaClientGenerator>
+
+        <!-- 要对那些数据表进行生成操作，必须要有一个. -->
+        <table  tableName="tb_student" domainObjectName="Student"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="false" />
+        </table>
+
+        <!--     <table schema="numysql" tableName="sys_menu" domainObjectName="Category"
+                enableCountByExample="false" enableUpdateByExample="false"
+                enableDeleteByExample="false" enableSelectByExample="false"
+                selectByExampleQueryId="false">
+                <property name="useActualColumnNames" value="true" />
+            </table> -->
+
+    </context>
+</generatorConfiguration>
