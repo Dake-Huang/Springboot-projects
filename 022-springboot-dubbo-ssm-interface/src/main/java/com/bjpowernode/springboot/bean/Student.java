@@ -1,6 +1,8 @@
 package com.bjpowernode.springboot.bean;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable {
     private Integer studentId;
 
     private String studentName;
